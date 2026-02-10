@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npm update:*)",
-      "Bash(claude:*)"
+      "Bash(claude:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(npm install:*)"
     ]
   }
 }

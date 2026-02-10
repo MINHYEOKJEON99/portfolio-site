@@ -1,9 +1,13 @@
 "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { ContactForm } from "@/components/contact-form"
 import { Github, Linkedin, Mail } from "lucide-react"
 
 export function HeroSection() {
+  const [contactOpen, setContactOpen] = useState(false)
+
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-4xl w-full">
@@ -19,7 +23,7 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <Button size="lg" className="gap-2">
+            <Button size="lg" className="gap-2" onClick={() => setContactOpen(true)}>
               <Mail className="h-4 w-4" />
               Contact Me
             </Button>
@@ -34,6 +38,8 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+
+      <ContactForm open={contactOpen} onOpenChange={setContactOpen} />
     </section>
   )
 }
