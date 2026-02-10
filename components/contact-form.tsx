@@ -35,7 +35,7 @@ export function ContactForm({ open, onOpenChange }: ContactFormProps) {
           email: contact,
           message: `보내는 사람: ${name}\n연락처: ${contact}\n\n메시지 내용:\n${message}`,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
       );
 
       setStatus("success");
@@ -62,7 +62,7 @@ export function ContactForm({ open, onOpenChange }: ContactFormProps) {
         <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mb-4">
           <Mail className="h-4 w-4" />
           <span>메시지는</span>
-          <a href="mailto:mari394337@gmail.com" className="text-indigo-400 hover:underline">
+          <a href="mailto:mari394337@gmail.com" className="text-primary font-bold hover:underline">
             mari394337@gmail.com
           </a>
           <span>으로 전송됩니다.</span>

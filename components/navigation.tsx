@@ -34,16 +34,16 @@ export function Navigation() {
           </button>
 
           <div className="hidden md:flex items-center gap-2">
-            <Button variant="ghost" onClick={() => scrollToSection("projects")}>
+            <Button variant="ghost" onClick={() => scrollToSection("projects")} className="dark:hover:text-white">
               Projects
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("skills")}>
+            <Button variant="ghost" onClick={() => scrollToSection("skills")} className="dark:hover:text-white">
               Skills
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("experience")}>
+            <Button variant="ghost" onClick={() => scrollToSection("experience")} className="dark:hover:text-white">
               Experience
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("contact")}>
+            <Button variant="ghost" onClick={() => scrollToSection("contact")} className="dark:hover:text-white">
               Contact
             </Button>
           </div>

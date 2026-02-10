@@ -27,7 +27,7 @@ export function HeroSection() {
             className="text-lg text-muted-foreground max-w-2xl leading-relaxed animate-fade-in-up"
             style={{ animationDelay: "4.5s" }}
           >
-            안녕하세요. 사용자 중심의 인터페이스를 설계하고 구현하는 프론트엔드 개발자입니다. 최신 웹 기술을 활용하여
+            안녕하세요. 사용자 중심의 인터페이스를 설계하고 구현하는 프론트엔드 개발자 입니다. 최신 웹 기술을 활용하여
             성능과 접근성을 모두 갖춘 애플리케이션을 만듭니다.
           </p>
 
